@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hostel Legends: Batch 2024–28</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #1e1e1e;
+      --card-bg: #2a2a2a;
+      --text: #eaeaea;
+      --muted: #b0b0b0;
+      --accent: #f4c430;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header.hero { padding: 4rem 1.5rem 3rem; text-align: center; background: radial-gradient(1200px 400px at 50% -10%, rgba(244,196,48,0.08), transparent 60%); border-bottom: 1px dashed rgba(255,255,255,0.08); }
+    header.hero h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); font-weight: 800; letter-spacing: 0.8px; }
+    header.hero .subtitle { margin-top: 0.75rem; color: var(--muted); font-size: 1.05rem; font-style: italic; }
+    header.hero .micro { margin-top: 0.6rem; font-size: 0.9rem; color: #9a9a9a; }
+
+    main { flex: 1; padding: 2rem 1.5rem 3rem; max-width: 1200px; margin: 0 auto; width: 100%; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.8rem; }
+
+    .card { background: var(--card-bg); border-radius: 14px; padding: 1.8rem 1.2rem 2.2rem; min-height: 360px; text-align: center; text-decoration: none; color: inherit; transition: transform 0.25s ease, box-shadow 0.25s ease; position: relative; cursor: pointer; display: block; }
+    .card:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,0,0,0.45); }
+
+    .avatar { width: 110px; height: 110px; margin: 0 auto 1rem; border-radius: 50%; overflow: hidden; border: 3px solid #3a3a3a; background: #111; }
+    .avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+    .name { font-weight: 600; font-size: 1.1rem; margin-bottom: 0.6rem; }
+    .line { font-family: 'Patrick Hand', cursive; font-size: 1.05rem; color: var(--accent); line-height: 1.3; margin-bottom: 0.4rem; }
+    .line::before, .line::after { content: '"'; color: #8f7a1f; }
+
+    .badge { display: inline-block; margin-bottom: 0.6rem; padding: 0.25rem 0.6rem; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: #1e1e1e; background: var(--accent); border-radius: 999px; }
+
+    footer { text-align: center; padding: 1.5rem 1rem 2rem; font-size: 0.9rem; color: var(--muted); }
+    footer span { color: var(--accent); }
+
+    body.night { background: #161616; }
+    body.night header.hero { background: radial-gradient(1200px 400px at 50% -10%, rgba(244,196,48,0.12), transparent 65%); }
+
+    .secret { opacity: 0; font-size: 0.75rem; color: #9c9c9c; margin-top: 0.35rem; transition: opacity 0.25s ease; pointer-events: none; }
+    .card.show-secret .secret { opacity: 1; }
+
+    .status { position: absolute; top: 10px; right: 12px; font-size: 0.65rem; padding: 0.2rem 0.45rem; border-radius: 6px; background: rgba(244,196,48,0.15); color: var(--accent); }
+
+    .placeholder { border: 2px dashed rgba(244,196,48,0.35); background: repeating-linear-gradient(-45deg,#2a2a2a,#2a2a2a 10px,#262626 10px,#262626 20px); }
+    
+      .insta { margin-top: 40px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 1rem;
+      
+    }
+
+    .insta img {
+      width: 20px;
+      height: 20px;
+      opacity: 0.85;
+    }
+
+    .insta a {
+      color: #b0b0b0;
+      text-decoration: none;
+    }
+
+    .insta a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    
+    
+  </style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <span class="badge">Batch 2024–28</span>
+    <h1>Hostel Legends</h1>
+    <p class="subtitle">The Backchodi, The Brotherhood, The Memories</p>
+    <p class="micro">Scribbled nights • Shared Maggi • Unlimited Wi‑Fi fights</p>
+  </div>
+</header>
+
+<main>
+  <section class="grid">
+
+    <!-- 12 PLACEHOLDERS -->
+    <div class="card placeholder" data-secret="Fan ki awaaz me hi neend aati hai">
+      <div class="avatar"><img src="assests/SAMEER.jpg" alt="Placeholder"></div>
+      <div class="name">SAMEER</div>
+      <div class="line">Fan ki awaaz me hi neend aati hai</div>
+      <div class="secret">Light gayi to asli kahani shuru hoti hai</div>
+      <div class="insta">
+        <img class="insta_logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        <a href="https://www.instagram.com/mohd.sameer._?igsh=dzRrOW43eJF1YWI"
+   target="_blank"
+   onclick="event.stopPropagation()">
+  @Sameer
+</a>
+      </div>
+             
+    </div>
+     <div class="card placeholder" data-secret="Fan ki awaaz me hi neend aati hai">
+      <div class="avatar"><img src="assests/UTKARSH.jpg" alt="Placeholder"></div>
+      <div class="name">UTKARSH VERMA</div>
+      <div class="line">Fan ki awaaz me hi neend aati hai</div>
+      <div class="secret">Light gayi to asli kahani shuru hoti hai</div>
+      <div class="insta">
+        <img class="insta_logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        <a href="https://www.instagram.com/utka_rsh84?igsh=MXBnYW5lbXdwc205dw=="
+   target="_blank"
+   onclick="event.stopPropagation()">
+  @Utkarsh
+</a>
+      </div>
+             
+    </div>
+      
+     
+ 
+
+    
+      <div class="card placeholder" data-secret="Fan ki awaaz me hi neend aati hai">
+      <div class="avatar"><img src="assests/ANKUSH.jpg" alt="Placeholder"></div>
+      <div class="name">ANKUSH SINGH</div>
+      <div class="line">Fan ki awaaz me hi neend aati hai</div>
+      <div class="secret">Light gayi to asli kahani shuru hoti hai</div>
+      <div class="insta">
+        <img class="insta_logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        <a href="https://www.instagram.com/___ankush_singh.___?igsh=MW5weW0yaDAzNXBscQ=="
+   target="_blank"
+   onclick="event.stopPropagation()">
+  @Ankush
+</a>
+      </div>
+             </div>
+   
+    
+      <div class="card placeholder" data-secret="Fan ki awaaz me hi neend aati hai">
+      <div class="avatar"><img src="assests/PRASHANT.jpg" alt="Placeholder"></div>
+      <div class="name">PRASHNAT MAURYA</div>
+      <div class="line">Fan ki awaaz me hi neend aati hai</div>
+      <div class="secret">Light gayi to asli kahani shuru hoti hai</div>
+      <div class="insta">
+        <img class="insta_logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        <a href="https://www.instagram.com/prashant_maurya63?igsh=MTVwc2hwOGYwM2djZA=="
+   target="_blank"
+   onclick="event.stopPropagation()">
+  @Prashant
+</a>
+      </div>
+             </div>
+   
+              <div class="card placeholder" data-secret="Fan ki awaaz me hi neend aati hai">
+      <div class="avatar"><img src="assests/RAJVEER.jpg" alt="Placeholder"></div>
+      <div class="name">RAJVEER DUBEY</div>
+      <div class="line">Fan ki awaaz me hi neend aati hai</div>
+      <div class="secret">Light gayi to asli kahani shuru hoti hai</div>
+      <div class="insta">
+        <img class="insta_logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        <a href="https://www.instagram.com/rj_dubey_99?igsh=MWVyYzBrcDhmMHZ5OA=="
+   target="_blank"
+   onclick="event.stopPropagation()">
+  @Rajveer
+</a>
+      </div>
+             </div>
+                    <div class="card placeholder" data-secret=" Maggi = emergency food">
+      <div class="avatar"><img src="assests/DEEPASHU.jpg" alt="Placeholder"></div>
+      <div class="name"> DEEPANSHU PANDEY</div>
+      <div class="line"> Maggi = emergency food</div>
+      <div class="secret"> Sabse zyada yaadein yahin banti hain</div>
+      <div class="insta">
+        <img class="insta_logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        <a href="https://www.instagram.com/deepanshu.debug?igsh=c2pjcHB3YTkzb2Jn"
+   target="_blank"
+   onclick="event.stopPropagation()">
+  @Deepanshu
+</a>
+      </div>
+             </div>
+               <div class="card placeholder" data-secret="Fan ki awaaz me hi neend aati hai">
+      <div class="avatar"><img src="assests/ARPIT.jpg" alt="Placeholder"></div>
+      <div class="name">ARPIT UPADHAYAY</div>
+      <div class="line">Fan ki awaaz me hi neend aati hai</div>
+      <div class="secret">Light gayi to asli kahani shuru hoti hai</div>
+      <div class="insta">
+        <img class="insta_logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        <a href="https://www.instagram.com/_axiom_01?igsh=OWo3cWoybnJtZ3Nx"
+   target="_blank"
+   onclick="event.stopPropagation()">
+  @Arpit
+</a>
+      </div>
+             </div>
+             <div class="card placeholder" data-secret="Fan ki awaaz me hi neend aati hai">
+      <div class="avatar"><img src="assests/SIDDRATH.jpg" alt="Placeholder"></div>
+      <div class="name">SIDDRTH MAURYA</div>
+      <div class="line">Fan ki awaaz me hi neend aati hai</div>
+      <div class="secret">Light gayi to asli kahani shuru hoti hai</div>
+      <div class="insta">
+        <img class="insta_logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        <a href="https://www.instagram.com/i_siddharth_23?igsh=MWg1NXFhbGF6N2w4NQ=="
+   target="_blank"
+   onclick="event.stopPropagation()">
+  @Siddarth
+</a>
+      </div>
+             </div>
+              <div class="card placeholder" data-secret="Fan ki awaaz me hi neend aati hai">
+      <div class="avatar"><img src="assests/POlice.jpg" alt="Placeholder"></div>
+      <div class="name">SAURABH NIGAM</div>
+      <div class="line">Fan ki awaaz me hi neend aati hai</div>
+      <div class="secret">Light gayi to asli kahani shuru hoti hai</div>
+      <div class="insta">
+        <img class="insta_logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        <a href="https://www.instagram.com/saurabhnigam175?igsh=NHlyYTJnOW54ZW15"
+   target="_blank"
+   onclick="event.stopPropagation()">
+  @Saurabh
+</a>
+      </div>
+             </div>
+
+   
+    
+     
+
+  </section>
+</main>
+
+<footer>
+  Made with <span> LOVE  </span>to find another <span>LOVE</span>. © Hostel Boys
+</footer>
+
+<script>
+  // Night mode
+  const hour = new Date().getHours();
+  if(hour>=22 || hour<5){document.body.classList.add('night');}
+
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card=>{
+    card.addEventListener('click', e=>{
+      e.preventDefault();
+      card.classList.add('show-secret');
+    });
+    card.addEventListener('dblclick', e=>{
+      e.preventDefault();
+      card.classList.remove('show-secret');
+    });
+      card.classList.remove('show-secret');
+      const img = card.querySelector('.new-img');
+      if(img) img.style.display='block';
+    });
+  ;
+</script>
+
+</body>
+</html>
